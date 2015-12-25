@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Bootstrap Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../js/bootstrap-3.3.5/css/bootstrap.css">
+	</head>
+	<body>
+		
+
+		<!-- 	
+				display:inline; 内联元素，简单来说就是在同一行显示。
+				display:block; 块级元素，简单来说就是就是有换行，会换到第二行。
+				display:inline-block; 就是在同一行内的块级元素。 
+		-->
+
+		<h1>inline案例</h1>
+		<!-- A默认就是一行，所以inline用在这里是废的。宽高度设置也是费的。 -->
+		<a href="#" style="display:inline;width:100px;height:100px;background:#ccc;">链接一</a>
+		<a href="#" style="display:inline;width:100px;height:100px;background:#ccc;">链接一</a>
+
+		<h1>block案例</h1>
+		<!-- 块状，这里高宽度就生效了，但是因为是块状，前后有换行符，所以这是两行了。 -->
+		<a href="#" style="display:block;width:100px;height:100px;background:#ccc;">链接一</a>
+		<a href="#" style="display:block;width:100px;height:100px;background:#ccc;">链接一</a>
+
+		<h1>inline-block案例</h1>
+		<!-- 这样就是同时达到块状，而且在同一行显示。注：去除间隙：将margin设置为负值 -->
+		<a href="#" style="display:inline-block;width:100px;height:100px;background:#ccc;">链接一</a>
+		<a href="#" style="display:inline-block;width:100px;height:100px;background:#ccc;">链接一</a>
+
+
+		<!--javascript lib -->
+		<script src="http://libs.baidu.com/jquery/1.11.1/jquery.js"></script>
+		<script src="../js/bootstrap-3.3.5/js/bootstrap.js"></script>
+	</body>
+</html>

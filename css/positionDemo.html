@@ -1,9 +1,9 @@
 <html>
-    <head>
-        <title>position实例</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="class1.css" type="text/css" />
-        <style type="text/css">
+<head>
+  <title>position实例</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="class1.css" type="text/css" />
+  <style type="text/css">
         /*1、static：默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
 
           2、relative：生成相对定位的元素，通过top,bottom,left,right的设置相对于其正常位置进行定位。可通过z-index进行层次分级。
@@ -20,17 +20,17 @@
           .container{background: yellow;width: 300px;height: 300px;margin: 0px;margin: 20px}
           .son{position:relative;background: blue;width: 100px;height: 100px;left: 10px;top: 10px}
           .son2{position:absolute;background: blue;width: 100px;height: 100px;left: 10px;top: 10px}
-
+          
         </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="son"></div>
-            <div style="width:100px;height:100px;background:green;"></div>
-        </div>
-        <div class="container" style="position:fixed;bottom:0px;">
-            <div class="son2"></div>
-            <div style="width:100px;height:100px;background:green;"></div>
-        </div>
-    </body>
+</head>
+<body>
+  <div class="container">
+    <div class="son"></div>
+    <div style="width:100px;height:100px;background:green;"></div>
+  </div>
+  <div class="container" style="position:fixed;bottom:0px;">
+    <div class="son2"></div>
+    <div style="width:100px;height:100px;background:green;"></div>
+  </div>
+</body>
 </html>

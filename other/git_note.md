@@ -9,6 +9,12 @@
 git config --global user.name "UserName" 
 git config --global user.email "UserName@gmail.com" 
 ```
+**~/.gitconfig将被添加如下信息：**
+```
+[user] 
+    name = UserName
+    email = UserName@gmail.com
+```
 
 ### 提高命令输出的可读性
 ```
@@ -23,7 +29,7 @@ git config --global color.ui auto
 在GitHub网站中创建用户并完善个人信息
 
 ### 设置SSH Key
-**说明**：在本地生成SSH一边和github网站进行通信
+**说明**：在本地生成SSH Key和github网站进行通信
 运行以下的命令在本地生成SSH Key
 ```
 ssh-keygen -t rsa -C "UserName@gmail.com"
@@ -57,3 +63,21 @@ git clone git@github.com:Meddkim/notes.git
 git push
 ```
 
+### 克隆已有的项目
+```
+git clone git@github.com:MeddKim/notes.git
+```
+### 对该github项目进行管理
+- 查看git项目状态
+```
+git status
+```
+- 提交新内容
+1.加入暂存区
+```
+git add hello.txt
+```
+2.提交
+```
+git commit -m "注释"
+```

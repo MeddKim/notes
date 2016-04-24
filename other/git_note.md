@@ -68,16 +68,71 @@ git push
 git clone git@github.com:MeddKim/notes.git
 ```
 ### 对该github项目进行管理
-- 查看git项目状态
+#### 查看git项目状态
 ```
 git status
 ```
-- 提交新内容
-1.加入暂存区
+#### 提交新内容
+##### 加入暂存区
 ```
 git add hello.txt
 ```
-2.提交
+##### 提交
 ```
 git commit -m "注释"
+```
+**注：**若是不添加注释直接使用git commit，那么就会启动注释编辑器，可在其中编辑本次提交的注释，一般来说格式如下：
+```
+第一行：用一行文字简述提交的内容更改
+第二行：空行
+第三行：记述更改的原因和详细内容等一些详细信息
+```
+若是将提交信息留空并直接关闭编辑器，`提交就会被终止`
+##### 查看提交日志
+```
+git log
+```
+**只显示指定文件的日志**
+```
+git log 
+```
+**显示指定文件改动的内容**
+```
+git log -p readme.txt
+```
+4.推送
+```
+git push
+```
+### 比较
+### 分支
+#### 显示分支一览表
+```
+git branch
+```
+### 创建并切换到分支
+```
+git checkout -b feature-A
+```
+也可连续执行下面的命令
+```
+git branch feature-A
+git checkout feature-A
+```
+切回到原来的分支
+```
+git checkout master
+```
+或者使用切回上一个分支
+```
+git checkout -
+```
+### 合并分支到master上
+首先切回到master上
+```
+git checkout master
+```
+合并分支
+```
+git merge --no-off feature-A
 ```

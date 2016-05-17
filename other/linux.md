@@ -91,6 +91,8 @@ git clone https://github.com/hakobera/nvmw.git
 ```
 set "NVMW_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node"
 ```
+另一个解决方案：
+>https://github.com/coreybutler/nvm-windows
 
 ##使用Nexus配置maven私服
 
